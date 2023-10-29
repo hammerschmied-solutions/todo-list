@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <dialog class="add-todo-dialog">
+      <form class="add-todo-form">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" />
+        <label for="Priority">Priority</label>
+        <select name="priority" id="priority">
+          <option value="High">High</option>
+          <option value="Normal">Normal</option>
+          <option value="Low">Low</option>
+        </select>
+        <label for="due-date">Due-Date</label>
+        <input type="date" name="due-date" id="due-date" />
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description" />
+        <button type="button" id="cancel-btn">Cancel</button>
+        <button type="button" id="add-btn">Add</button>
+      </form>
+    </dialog>
+    <div class="container">
+      <div class="header">
+        <div class="add">Add To-Do</div>
+        <div class="logo-text">ToDo-List</div>
+        <div class="logo"></div>
+      </div>
+      <div class="content">
+        <div class="todo-heading"></div>
+        <table class="todo-table">
+          <thead>
+            <tr class="todo-heading">
+              <th class="h-title">Title</th>
+              <th class="h-priorioty">Priority</th>
+              <th class="h-duedate">Due Date</th>
+              <th class="h-description">Description</th>
+            </tr>
+          </thead>
+          <tbody class="todos"></tbody>
+        </table>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>

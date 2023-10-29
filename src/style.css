@@ -1,0 +1,69 @@
+.todo-table {
+  width: 100%;
+}
+.priority1 {
+  background-color: aliceblue;
+}
+.priority2 {
+  background-color: aquamarine;
+}
+.header {
+  display: flex;
+  height: 2rem;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo-text {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+.add {
+  font-weight: 700;
+  padding: 5px;
+  background-color: rgba(119, 189, 119, 0.3);
+  border-radius: 5px;
+}
+.add:hover {
+  cursor: pointer;
+}
+.extend-icon {
+  height: 1.2rem;
+  width: 100%;
+}
+
+.todo-table {
+  border-spacing: 0;
+}
+
+.todo-table > * > * > td,
+.todo-table > * > * > th {
+  padding: 0px 5px;
+}
+.expanded-todo td {
+  border-top: solid black 2px;
+}
+.dropdown-heading th:first-child {
+  border-left: solid black 2px;
+}
+.dropdown-heading th:last-child {
+  border-right: solid black 2px;
+}
+
+.dropdown-content td {
+  border-bottom: solid black 2px;
+  border-collapse: collapse;
+}
+.dropdown-content td:first-child {
+  border-left: solid black 2px;
+  border-radius: 0 0px 0 5px;
+  border-collapse: collapse;
+}
+.dropdown-content td:last-child {
+  border-right: solid black 2px;
+  border-radius: 0 0px 5px 0px;
+  border-collapse: collapse;
+}
